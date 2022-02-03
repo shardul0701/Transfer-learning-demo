@@ -19,8 +19,8 @@ logging.basicConfig(
 
 def update_greater_than_less_than_5(list_of_labels):
     for idx, label in enumerate(list_of_labels):
-        even_condition = label%2 == 0 ## CHANGE THE CONDITION
-        list_of_labels[idx] = np.where(even_condition, 1, 0)
+        Greater_condition = label > 5 ## CHANGE THE CONDITION
+        list_of_labels[idx] = np.where(Greater_condition, 1, 0)
     return list_of_labels
 
 
